@@ -1,0 +1,23 @@
+Step 1: Create a Dockerfile
+
+Step 2: Create a docker-compose.yml File
+
+Step 3: Update Your Django Settings
+
+Step 4: Build and Run Your Containers:
+	
+	docker-compose up --build
+
+Step 5: Run Migrations and Create a Superuser
+		
+	docker-compose exec web python manage.py migrate
+	docker-compose exec web python manage.py createsuperuser
+
+
+Conclusion
+You've now containerized your Django application using Docker and Docker Compose. Your application is running in a container along with a PostgreSQL database, and you can manage your application just like you would with a local setup. If you have any further questions or run into any issues, feel free to ask!
+
+
+
+
+
